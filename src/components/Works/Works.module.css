@@ -1,0 +1,125 @@
+.works {
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  height: 50px;
+  cursor: pointer;
+}
+.left_arrow {
+  left: 100px;
+  transform: rotateY(180deg);
+}
+.right_arrow {
+  right: 100px;
+}
+.works .slider {
+  height: 350px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
+}
+.works .slider .container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .container .item {
+  width: 700px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .container .item .left {
+  flex: 4;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .left .leftContainer {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left .leftContainer .imgContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(245, 179, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftContainer .imgContainer img {
+  width: 25px;
+}
+.left .leftContainer h2 {
+  font-size: 20px;
+}
+.left .leftContainer p {
+  font-size: 13px;
+}
+.left .leftContainer span {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.slider .container .item .right {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container .item .right img {
+  width: 400px;
+  transform: rotate(-10deg);
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .arrow {
+    display: none;
+  }
+  .works .slider {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slider .container .item {
+    width: 80%;
+    height: 150px;
+    margin: 15px 0;
+  }
+  .item .left .leftContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .left .leftContainer .imgContainer {
+    width: 20px;
+    height: 20px;
+  }
+  .leftContainer .imgContainer img {
+    width: 15px;
+  }
+  .left .leftContainer h2 {
+    font-size: 13px;
+  }
+  .left .leftContainer p {
+    display: none;
+  }
+}

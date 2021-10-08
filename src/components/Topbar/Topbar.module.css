@@ -1,0 +1,93 @@
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  color: var(--primary);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+}
+.wrapper {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .left {
+  display: flex;
+  align-items: center;
+}
+.wrapper .left .logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 40px;
+}
+.wrapper .left .itemContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.left .itemContainer .icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.itemContainer span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.wrapper .right .hamburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.right .hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+  transform-origin: left;
+  transition: all 2s ease;
+}
+.active {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+}
+.right .hamburger .cross:first-child {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+.right .hamburger .cross:nth-child(2) {
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+}
+.right .hamburger .cross:last-child {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .wrapper .left .itemContainer {
+    display: none;
+  }
+}

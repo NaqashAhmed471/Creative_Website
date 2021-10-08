@@ -1,0 +1,97 @@
+.intro {
+  background-color: white;
+  display: flex;
+}
+.intro .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+.intro .left .imgContainer {
+  width: 700px;
+  height: 700px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+}
+.left .imgContainer img {
+  height: 90%;
+}
+.right {
+  flex: 0.5;
+  position: relative;
+}
+.right .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+.right .wrapper h2 {
+  font-size: 35px;
+}
+.right .wrapper h3 {
+  font-size: 30px;
+}
+.wrapper h3 span {
+  font-size: inherit;
+  color: crimson;
+}
+.ityped-cursor {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.right a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+.right a img {
+  width: 30px;
+  animation: arrowBlink 2s infinite;
+}
+@keyframes arrowBlink {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .left .imgContainer {
+    align-items: flex-start;
+  }
+  .left .imgContainer img {
+    height: 50%;
+  }
+  .right .wrapper {
+    padding-left: 0;
+    align-items: center;
+  }
+  .right .wrapper h1 {
+    font-size: 40px;
+  }
+  .right .wrapper h3 {
+    font-size: 20px;
+  }
+}

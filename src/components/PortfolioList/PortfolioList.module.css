@@ -1,0 +1,24 @@
+.portfoliolist {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.active {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .portfoliolist {
+    margin-right: 20px;
+  }
+}

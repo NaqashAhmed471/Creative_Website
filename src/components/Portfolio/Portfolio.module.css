@@ -1,0 +1,73 @@
+.portfolio {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio h1 {
+  font-size: 50px;
+}
+.portfolio ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio .container .item {
+  width: 220px;
+  height: 150px;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.portfolio .container .item:hover {
+  background-color: var(--primary);
+}
+.container .item h3 {
+  position: absolute;
+  font-size: 20px;
+}
+.container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.container .item img:hover {
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .portfolio h1 {
+    font-size: 20px;
+  }
+  .portfolio ul {
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio .container {
+    width: 100%;
+  }
+  .portfolio .container .item {
+    width: 130px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,174 @@
+.testimonials {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials h1 {
+  font-size: 50px;
+}
+.testimonials .container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .container .card {
+  width: 250px;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+  transition: all 1s ease;
+}
+.testimonials .container .card_featured {
+  width: 300px;
+  height: 75%;
+  margin: 0 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+  transition: all 1s ease;
+}
+.container .card .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card .top .left {
+  height: 25px;
+}
+.container .card .top .right {
+  height: 25px;
+}
+.container .card .top .user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 30px;
+}
+.container .card .center {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(250, 244, 245);
+}
+.container .card .center p {
+  font-size: 12px;
+}
+.container .card .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card .bottom h3 {
+  margin-bottom: 5px;
+}
+.card .bottom h4 {
+  color: gray;
+}
+
+.container .card_featured .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card_featured .top .left {
+  height: 25px;
+}
+.container .card_featured .top .right {
+  height: 25px;
+}
+.container .card_featured .top .user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 30px;
+}
+.container .card_featured .center {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(250, 244, 245);
+}
+.container .card_featured .center p {
+  font-size: 12px;
+}
+.container .card_featured .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_featured .bottom h3 {
+  margin-bottom: 5px;
+}
+.card_featured .bottom h4 {
+  color: gray;
+}
+
+.testimonials .container .card:hover {
+  transform: scale(1.1);
+}
+.testimonials .container .card_featured:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries only For Galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .testimonials {
+    justify-content: space-around;
+  }
+  .testimonials h1 {
+    font-size: 20px;
+  }
+  .testimonials .container {
+    height: 100%;
+    flex-direction: column;
+  }
+  .testimonials .container .card {
+    margin: 10px 0;
+    height: 180px;
+  }
+  .testimonials .container .card_featured {
+    width: 250px;
+    height: 180px;
+    margin: 1px;
+  }
+  .container .card .top .user {
+    width: 30px;
+    height: 30px;
+  }
+  .container .card_featured .top .user {
+    width: 30px;
+    height: 30px;
+  }
+  .container .card .center {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .container .card_featured .center {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .card .bottom h3 {
+    font-size: 14px;
+  }
+  .card .bottom h4 {
+    font-size: 13px;
+  }
+  .card_featured .bottom h3 {
+    font-size: 14px;
+  }
+  .card_featured .bottom h4 {
+    font-size: 13px;
+  }
+}
